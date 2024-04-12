@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add an article</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a href="/">Link to Start Page</a>
+  <h2>Add new article</h2>
+  <form>
+      <p>
+          <label for="title">Title</label>:
+          <input type="text" name="title" id="title" required>
+      </p>
+      <p>
+          <label for="content">Content</label>:
+          <br>
+          <textarea name="content" id="content" rows="5" required></textarea>
+      </p>
+      <input type="submit" value="Add">
+  </form>
+  <p id="result"></p>
+  <script src="/ex3.js"></script>
+</body>
+
+</html>

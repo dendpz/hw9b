@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a href="/">Link to Start Page</a>
+  <h2>Dennis' Sample Form</h2>
+  <form>
+    <p>
+      <a>Name: </a><input type="text" name="name" id="name" required><br><br>
+      <a>Email: </a><input type="text" name="email" id="email" placeholder="name@domain" required>
+    </p>
+    <p>
+      <a>Payment Type:</a><br>
+      <input type="radio" name="pmethod" id="cash" value="CASH" checked>
+      <label for="cash">Cash</label>
+      <br>
+      <input type="radio" id="cc" name="pmethod" value="CC">
+      <label for="cc">Credit Card</label>
+      <br>
+      <input type="radio" id="gpay" name="pmethod" value="GP">
+      <label for="gpay">Google Pay</label>
+      <br>
+      <input type="radio" id="apay" name="pmethod" value="AP">
+      <label for="apay">Apple Pay</label>
+      <br>
+    </p>
+    <p>
+      <input type="checkbox" id="promo" name="promo" value="Promo">
+      <label for="promo">Sign me up for special promotions</label>
+    </p>
+    <p>
+      <label for="location">Preferred Location: </label>
+      <select name="location" id="location">
+        <option value="la">Los Angeles</option>
+        <option value="oc">Orange County</option>
+        <option value="rv">Riverside</option>
+        <option value="sd">San Diego</option>
+      </select>
+    </p>
+    <input type="submit" value="Submit">
+    <input type="button" value="Cancel">
+  </form>
+  <p id="result"></p>
+  <script src="/ex1.js"></script>
+</body>
+</html>
